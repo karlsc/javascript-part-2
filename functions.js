@@ -37,3 +37,14 @@ var yourArray2 = [  {name: "Karl", email: "csdf@hotmail.com"},
 
 console.log(yourArray.sort(sortLongestName));
 console.log(yourArray2.sort(sortAlphaEmail));
+
+// Create a function that will return the square of a number
+
+function squareOfNumber(value){
+    
+    return value * value;
+}
+
+var yourArray = [2,4,6,12,3];
+
+yourArray.map(squareOfNumber);
