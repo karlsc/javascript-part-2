@@ -48,3 +48,14 @@ function squareOfNumber(value){
 var yourArray = [2,4,6,12,3];
 
 yourArray.map(squareOfNumber);
+
+// Function that will square the num property of objects
+
+function squareOfNum(value){
+    
+    return value.num * value.num;
+}
+
+var yourArray = [{num: 12},{num: 20},{num: 4},{num: 102}];
+
+yourArray.map(squareOfNum);
