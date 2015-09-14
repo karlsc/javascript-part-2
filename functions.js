@@ -59,3 +59,45 @@ function squareOfNum(value){
 var yourArray = [{num: 12},{num: 20},{num: 4},{num: 102}];
 
 yourArray.map(squareOfNum);
+
+// Create a function that will take an operation and two numbers and will return function
+
+function operationMaker(operation){
+    
+    function doingTheMaths(a,b){
+        
+        switch(operation){
+            
+            case "add":
+                return a + b;
+                
+            case "sub":
+                return a - b;
+                
+            case "mult":
+                return a * b;
+                
+            case "div":
+                return a / b;
+        }
+    }
+    
+    return doingTheMaths;
+}
+
+var adder = operationMaker("add");
+var sum = adder(5, 10); // 15
+
+var multiplier = operationMaker("mult");
+var product = multiplier(5, 10); // 50
+
+var divider = operationMaker("div");
+var resDiv = divider(50,2); // 25
+
+var substracter = operationMaker("sub");
+var resSub = substracter(17,5); // 12
+
+console.log(sum);
+console.log(product);
+console.log(resDiv);
+console.log(resSub);
