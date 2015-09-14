@@ -1,0 +1,1 @@
+// This file was created for javascript part 2 class
